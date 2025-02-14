@@ -4,7 +4,6 @@ import chrome from 'selenium-webdriver/chrome.js';
 (async function mobileEmulation() {
     let options = new chrome.Options();
 
-    // ✅ Use a valid device name
     options.setMobileEmulation({
         deviceMetrics: { width: 430, height: 932, pixelRatio: 3 },
         userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.177 Mobile Safari/537.36'

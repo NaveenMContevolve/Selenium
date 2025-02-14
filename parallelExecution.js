@@ -14,17 +14,17 @@ async function runTest(url) {
 }
 
 describe('Parallel Selenium Tests', function () {
-  this.timeout(60000); // Increase timeout to 60s
+  this.timeout(60000); 
 
   it('Test Google', async function () {
-    return runTest('https://www.google.com'); // ✅ Return the async function
+    return runTest('https://www.google.com'); 
   });
 
   it('Test Wikipedia', async function () {
-    return runTest('https://www.wikipedia.org'); // ✅ Return the async function
+    return runTest('https://www.wikipedia.org'); 
   });
 
   it('Test GitHub', async function () {
-    return runTest('https://github.com'); // ✅ Return the async function
+    return runTest('https://github.com'); 
   });
 });

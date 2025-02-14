@@ -2,11 +2,11 @@ const { Builder, By, until } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
 
 (async function headlessTest() {
-    // Set Chrome options for headless mode
+    
     let options = new chrome.Options();
-    options.addArguments('--headless'); // Run in headless mode
-    options.addArguments('--disable-gpu'); // Disable GPU acceleration (useful for headless)
-    options.addArguments('--window-size=1920,1080'); // Set window size to avoid viewport issues
+    options.addArguments('--headless'); 
+    options.addArguments('--disable-gpu'); 
+    options.addArguments('--window-size=1920,1080'); 
 
     let driver = await new Builder().forBrowser('chrome').setChromeOptions(options).build();
     let startTime = Date.now(); 
